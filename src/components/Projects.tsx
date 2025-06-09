@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 const Projects = () => {
@@ -66,7 +65,7 @@ const Projects = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section id="projects" className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
           Our Work

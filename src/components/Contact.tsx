@@ -1,7 +1,17 @@
 
 const Contact = () => {
+  const handleStartProject = () => {
+    console.log('Starting a new project...');
+    // You can add form logic or redirect to a contact form here
+  };
+
+  const handleScheduleCall = () => {
+    console.log('Scheduling a call...');
+    // You can add calendar integration or redirect to scheduling page here
+  };
+
   return (
-    <section className="py-20 px-4 bg-gray-900">
+    <section id="contact" className="py-20 px-4 bg-gray-900">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           Let's Work Together
@@ -38,10 +48,16 @@ const Contact = () => {
         </div>
         
         <div className="flex flex-col md:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+          <button 
+            onClick={handleStartProject}
+            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+          >
             Start a Project
           </button>
-          <button className="px-8 py-4 border-2 border-gray-600 text-gray-300 rounded-full font-semibold hover:border-purple-500 hover:text-purple-400 transition-all duration-300">
+          <button 
+            onClick={handleScheduleCall}
+            className="px-8 py-4 border-2 border-gray-600 text-gray-300 rounded-full font-semibold hover:border-purple-500 hover:text-purple-400 transition-all duration-300"
+          >
             Schedule a Call
           </button>
         </div>

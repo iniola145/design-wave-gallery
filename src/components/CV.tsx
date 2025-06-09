@@ -1,5 +1,17 @@
 
 const CV = () => {
+  const handleDownloadCV = () => {
+    console.log('Downloading CV...');
+    // You can add actual CV download logic here
+  };
+
+  const handleViewPortfolio = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="max-w-4xl mx-auto text-center">
@@ -50,10 +62,16 @@ const CV = () => {
           </div>
           
           <div className="flex flex-col md:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <button 
+              onClick={handleDownloadCV}
+              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
               Download Full CV
             </button>
-            <button className="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300">
+            <button 
+              onClick={handleViewPortfolio}
+              className="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300"
+            >
               View Portfolio
             </button>
           </div>

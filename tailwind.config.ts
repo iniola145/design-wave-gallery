@@ -99,14 +99,31 @@ export default {
 					'100%': {
 						transform: 'translate(0px, 0px) scale(1)',
 					},
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				blob: 'blob 7s infinite',
+				'fade-in': 'fade-in 0.6s ease-out forwards',
 			},
 			animationDelay: {
+				'100': '100ms',
+				'200': '200ms',
+				'300': '300ms',
+				'500': '500ms',
+				'700': '700ms',
+				'1000': '1s',
 				'2000': '2s',
 				'4000': '4s',
 			}

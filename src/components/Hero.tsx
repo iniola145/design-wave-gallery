@@ -8,6 +8,20 @@ const Hero = () => {
     setIsVisible(true);
   }, []);
 
+  const handleViewWork = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleGetInTouch = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated background elements */}
@@ -25,10 +39,16 @@ const Hero = () => {
           We craft beautiful websites and stunning graphics that tell your story
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center px-4">
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+          <button 
+            onClick={handleViewWork}
+            className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
+          >
             View Our Work
           </button>
-          <button className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-purple-600 hover:text-purple-600 transition-all duration-300">
+          <button 
+            onClick={handleGetInTouch}
+            className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:border-purple-600 hover:text-purple-600 transition-all duration-300"
+          >
             Get In Touch
           </button>
         </div>
