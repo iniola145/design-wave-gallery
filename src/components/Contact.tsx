@@ -35,7 +35,7 @@ const Contact = () => {
               <span className="text-white font-bold">📱</span>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Phone</h3>
-            <p className="text-gray-300">+1 (555) 123-4567</p>
+            <p className="text-gray-300">+234 807 438 5235</p>
           </div>
           
           <div className="bg-gray-800 p-6 rounded-2xl hover:bg-gray-700 transition-colors duration-300">
@@ -43,7 +43,7 @@ const Contact = () => {
               <span className="text-white font-bold">📍</span>
             </div>
             <h3 className="text-xl font-semibold text-white mb-2">Location</h3>
-            <p className="text-gray-300">San Francisco, CA</p>
+            <p className="text-gray-300">Lagos, NG</p>
           </div>
         </div>
         
