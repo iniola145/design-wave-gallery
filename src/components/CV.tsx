@@ -43,7 +43,7 @@ const CV = () => {
             </div>
             
             <div className="text-left">
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">Education & Certifications</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">Certifications</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-green-500 pl-4">
                   <h4 className="font-semibold text-gray-800">Bachelor of Computer Science</h4>
