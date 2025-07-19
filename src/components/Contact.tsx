@@ -48,7 +48,7 @@ const Contact = () => {
     try {
 
       const emailData = {
-        to_email: 'iniola145@gmail.com',
+        to_email: 'yourgotodesigner24@gmail.com',
         from_email: formData.userEmail,
         message: formData.message,
         subject: `New Contact Form Message from ${formData.userEmail}`
@@ -56,15 +56,15 @@ const Contact = () => {
 
       // In handleSubmit function:
       await emailjs.send(
-        'service_tlrlefs',
-        'template_m356zav',
+        'service_tlrlefs', // service_g101w0e
+        'template_m356zav', // template_amcyqua
         {
-          to_email: 'iniola145@gmail.com',
+          to_email: 'yourgotodesigner24@gmail.com',
           from_email: formData.userEmail,
           message: formData.message,
           reply_to: formData.userEmail
         },
-        'Ttleyyy0oQAl3ImDB'
+        'Ttleyyy0oQAl3ImDB' // nMo7B7SjmUtHAgDuc
       );
 
       // Simulate API call for demo
@@ -106,7 +106,7 @@ const Contact = () => {
                 <span className="text-white font-bold">@</span>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">Email</h3>
-              <p className="text-gray-300">hello@creativestudio.com</p>
+              <p className="text-gray-300">yourgotodesigner24@gmail.com</p>
             </div>
           </div>
 

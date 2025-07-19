@@ -63,12 +63,6 @@ const CV = () => {
           
           <div className="flex flex-col md:flex-row gap-4 justify-center">
             <button 
-              onClick={handleDownloadCV}
-              className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
-            >
-              Download Full CV
-            </button>
-            <button 
               onClick={handleViewPortfolio}
               className="px-8 py-4 border-2 border-purple-600 text-purple-600 rounded-full font-semibold hover:bg-purple-600 hover:text-white transition-all duration-300"
             >

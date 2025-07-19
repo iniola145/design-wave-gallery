@@ -8,18 +8,16 @@ const Skills = () => {
     {
       category: "Web Development",
       items: [
-        { name: "React", level: 95, color: "from-blue-500 to-cyan-500" },
-        { name: "TypeScript", level: 90, color: "from-blue-600 to-blue-800" },
-        { name: "Node.js", level: 85, color: "from-green-500 to-green-700" },
+        { name: "React", level: 90, color: "from-blue-500 to-cyan-500" },
+        { name: "TypeScript", level: 80, color: "from-blue-600 to-blue-800" },
         { name: "Tailwind CSS", level: 98, color: "from-teal-500 to-blue-600" }
       ]
     },
     {
       category: "Design",
       items: [
-        { name: "UI/UX Design", level: 92, color: "from-purple-500 to-pink-500" },
-        { name: "Adobe Creative Suite", level: 88, color: "from-red-500 to-orange-500" },
-        { name: "Figma", level: 95, color: "from-purple-600 to-purple-800" },
+        { name: "Graphics Design", level: 92, color: "from-purple-500 to-pink-500" },
+        { name: "Adobe Photoshop", level: 95, color: "from-red-500 to-orange-500" },
         { name: "Branding", level: 87, color: "from-indigo-500 to-purple-600" }
       ]
     }

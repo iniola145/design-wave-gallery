@@ -1,23 +1,9 @@
 import { useState } from 'react';
 import ProjectDetailCarousel from './ProjectDetailCarousel'; 
-import logo1 from '../assets/logo_1.jpg';
-import logo2 from '../assets/logo_2.jpg';
-import logo3 from '../assets/logo_3.jpg';
-
-import flyer1 from '../assets/flyer_1.jpg';
-import flyer2 from '../assets/flyer_2.jpg'; 
-import flyer3 from '../assets/flyer_3.jpg';
-import flyer4 from '../assets/flyer_4.jpg';
-import flyer5 from '../assets/flyer_5.jpg';
-import flyer6 from '../assets/flyer_6.jpg';
-import flyer7 from '../assets/flyer_7.jpg';
-import flyer8 from '../assets/flyer_8.jpg';
-import flyer9 from '../assets/flyer_9.jpg';
-import flyer10 from '../assets/flyer_10.jpg';
-import flyer11 from '../assets/flyer_11.jpg';
-import flyer12 from '../assets/flyer_12.jpg';
-import flyer13 from '../assets/flyer_13.jpg';
-import flyer14 from '../assets/flyer_14.jpg';
+import { flyers, logos } from '@/assets';
+import graphics from '../assets/graphicsdesign.jpg';
+import hero from '../assets/portfolio hero.png'
+import tradmin from '../assets/tradmin.png';
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -29,29 +15,22 @@ const Projects = () => {
       title: "E-commerce Platform",
       category: "web",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
-      description: "Modern e-commerce solution with React and Node.js",
-      tags: ["React", "Node.js", "MongoDB"],
+      description: "Modern e-commerce solution with React",
+      tags: ["React", "Typescript", "Tailwind"],
       images: [
-        "/assets/ecommerce-1.jpg",
-        "/assets/ecommerce-2.jpg",
-        "/assets/ecommerce-3.jpg",
-        "/assets/ecommerce-4.jpg"
+        `${tradmin}`,
       ],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com/example"
+      liveUrl: "http://tradmin.vercel.app/",
+      githubUrl: "https://github.com/iniola145/tradmin"
     },
     {
       id: 2,
       title: "Brand Identity Design",
       category: "design",
       image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop",
-      description: "Complete brand identity for a tech startup",
+      description: "Complete brand identity for any Company",
       tags: ["Branding", "Logo Design", "Style Guide"],
-      images: [
-        `${logo1}`,
-        `${logo2}`,
-        `${logo3}`,
-      ]
+      images: logos,
     },
     {
       id: 3,
@@ -59,37 +38,20 @@ const Projects = () => {
       category: "web",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
       description: "Creative portfolio with smooth animations",
-      tags: ["React", "Tailwind", "Framer Motion"],
+      tags: ["React", "Tailwind", "Shadcn"],
       images: [
-        "/assets/portfolio-1.jpg",
-        "/assets/portfolio-2.jpg",
-        "/assets/portfolio-3.jpg"
+        `${hero}`,
       ],
-      liveUrl: "https://example.com"
+      liveUrl: "https://portfolio2000.vercel.app/"
     },
     {
       id: 4,
       title: "Graphics Design",
       category: "design",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=300&fit=crop",
-      description: "UI/UX design for a fitness mobile application",
-      tags: ["UI/UX", "Mobile Design", "Prototyping"],
-      images: [
-        `${flyer1}`,
-        `${flyer2}`,
-        `${flyer3}`,
-        `${flyer4}`,
-        `${flyer5}`,
-        `${flyer6}`,
-        `${flyer7}`,
-        `${flyer8}`,
-        `${flyer9}`,
-        `${flyer10}`,
-        `${flyer11}`,
-        `${flyer12}`,
-        `${flyer13}`,
-        `${flyer14}`
-      ]
+      image: `${graphics}`,
+      description: "Custom flyers for ads, events, and promotions ",
+      tags: ["Adobe", "Prototyping"],
+      images: flyers,
     }
   ];
 
